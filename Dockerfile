@@ -25,7 +25,7 @@ COPY --from=build /app/.nuxt ./.nuxt
 COPY --from=build /app/static ./static
 
 # Install runtime dependencies
-RUN yarn install --production --forzen-lockfile
+RUN yarn install --production --frozen-lockfile
 
 EXPOSE 80
 

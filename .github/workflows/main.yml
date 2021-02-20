@@ -41,7 +41,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn install --froze-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Run linter
         run: yarn lint
@@ -64,7 +64,7 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: yarn install --froze-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
